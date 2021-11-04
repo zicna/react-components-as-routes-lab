@@ -3,13 +3,13 @@
 ## Overview
 
 In this lab, you will create a simple Client-Side routing application with
-__React Router__.
+**React Router**.
 
 ## Objectives
 
-* Practice building an application with __React Router__
-* Access routes using a Navbar with matched routes
-* Visit different "views" in the application by accessing different routes
+- Practice building an application with **React Router**
+- Access routes using a Navbar with matched routes
+- Visit different "views" in the application by accessing different routes
 
 ## React Router App
 
@@ -19,10 +19,10 @@ and links for these 4 pages.
 
 This is what our app should look like when we are done with this lab:
 
-* [Home Page](https://s3.amazonaws.com/learn-verified/react-router-lab-home-page.png)
-* [Movies Page](https://s3.amazonaws.com/learn-verified/react-router-lab-movies-page.png)
-* [Directors Page](https://s3.amazonaws.com/learn-verified/react-router-lab-directors-page.png)
-* [Actors Page](https://s3.amazonaws.com/learn-verified/react-router-lab-actors-page.png)
+- [Home Page](https://s3.amazonaws.com/learn-verified/react-router-lab-home-page.png)
+- [Movies Page](https://s3.amazonaws.com/learn-verified/react-router-lab-movies-page.png)
+- [Directors Page](https://s3.amazonaws.com/learn-verified/react-router-lab-directors-page.png)
+- [Actors Page](https://s3.amazonaws.com/learn-verified/react-router-lab-actors-page.png)
 
 Let's work through this one component at a time
 
@@ -53,52 +53,54 @@ Our `index.js` file is completed for us. It loads App as the top level component
 
 #### `data.js`
 
-This file contains seed data for __Actors, Movies & Directors__
+This file contains seed data for **Actors, Movies & Directors**
 
 ## Component Info
 
-#### `App`
+### `App`
 
 This component already contains a `Router` wrapper where we'll include our
 particular routes. Inside this element, we'll need to render our `Navbar` and 4
-__React Router__ `Route` components with paths to __/, /movies, /directors &
-/actors__ and rendering the respective components. When a user visits the root
+**React Router** `Route` components with paths to **/, /movies, /directors &
+/actors** and rendering the respective components. When a user visits the root
 URL, they should see the `Home` component.
 
 **Note**: Since a `Router` wrapper can only wrap one child element, use a `div` to
 wrap the `Navbar` and `Route`s. This allows us to apply a CSS class at the App
 component level.
 
-#### `Navbar`
+### `Navbar`
 
-This component needs to render 4 `<NavLink>` components. They will be for __/,
-/movies, /directors, /actors__ <-- in this order(test checks for this).
+This component needs to render 4 `<NavLink>` components. They will be for **/,
+/movies, /directors, /actors** <-- in this order(test checks for this).
 
-#### `Home`
+### `Home`
 
 This component should render the text `Home Page` in an `<h1>`.
 
-#### `Movies`
+### `Movies`
 
-This component should render the text `Movies Page` in an `<h1>`, and make a new `<div>` for
-each movie. The `<div>` should contain the movie's title, time and a `<ul>` with a list of its
-genres.
+This component should render the text `Movies Page` in an `<h1>`, and make a new
+`<div>` for each movie. The `<div>` should contain the movie's title, time and a
+`<ul>` with a list of its genres.
 
-#### `Directors`
+### `Directors`
 
-This component should render the text `Directors Page` in an `<h1>`, and make a new `<div>`
-for each director. The `<div>` should contain the director's name and a `<ul>` with a list
-of their movies.
+This component should render the text `Directors Page` in an `<h1>`, and make a
+new `<div>` for each director. The `<div>` should contain the director's name
+and a `<ul>` with a list of their movies.
 
-#### `Actors`
+### `Actors`
 
-This component should render the text `Actors Page` in an `<h1>`, and make a new `<div>` for
-each actor. The `<div>` should contain the actor's name and a `<ul>` with a list of their
-movies. 
+This component should render the text `Actors Page` in an `<h1>`, and make a new
+`<div>` for each actor. The `<div>` should contain the actor's name and a `<ul>`
+with a list of their movies.
 
-> Note: The tests will count how many `<div>`s are nested inside your `Movies`, `Directors`, and `Actors` components. So to get tests to pass, you must create _exactly one_ `<div>` for each movie, director, or actor, and no additional nested `<div>`s in those components. 
+> Note: The tests will count how many `<div>`s are nested inside your `Movies`,
+> `Directors`, and `Actors` components. So to get tests to pass, you must create
+> _exactly one_ `<div>` for each movie, director, or actor, and no additional
+> nested `<div>`s in those components.
 
 ## Resources
 
-* [React Router](https://github.com/ReactTraining/react-router)
-* [React Router Tutorial](https://reacttraining.com/react-router/web/guides/quick-start)
+- [React Router](https://v5.reactrouter.com/web/guides/quick-start)
