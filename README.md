@@ -57,7 +57,7 @@ This file contains seed data for **Actors, Movies & Directors**
 
 ## Component Info
 
-#### `App`
+### `App`
 
 This component already contains a `Router` wrapper where we'll include our
 particular routes. Inside this element, we'll need to render our `Navbar` and 4
@@ -69,34 +69,37 @@ URL, they should see the `Home` component.
 wrap the `Navbar` and `Route`s. This allows us to apply a CSS class at the App
 component level.
 
-#### `Navbar`
+### `Navbar`
 
 This component needs to render 4 `<NavLink>` components. They will be for **/,
 /movies, /directors, /actors** <-- in this order(test checks for this).
 
-#### `Home`
+### `Home`
 
 This component should render the text `Home Page` in an `<h1>`.
 
-#### `Movies`
+### `Movies`
 
-This component should render the text `Movies Page` in an `<h1>`, and make a new `<div>` for
-each movie. The `<div>` should contain the movie's title, time and a `<ul>` with a list of its
-genres.
+This component should render the text `Movies Page` in an `<h1>`, and make a new
+`<div>` for each movie. The `<div>` should contain the movie's title, time and a
+`<ul>` with a list of its genres.
 
-#### `Directors`
+### `Directors`
 
-This component should render the text `Directors Page` in an `<h1>`, and make a new `<div>`
-for each director. The `<div>` should contain the director's name and a `<ul>` with a list
-of their movies.
+This component should render the text `Directors Page` in an `<h1>`, and make a
+new `<div>` for each director. The `<div>` should contain the director's name
+and a `<ul>` with a list of their movies.
 
-#### `Actors`
+### `Actors`
 
-This component should render the text `Actors Page` in an `<h1>`, and make a new `<div>` for
-each actor. The `<div>` should contain the actor's name and a `<ul>` with a list of their
-movies.
+This component should render the text `Actors Page` in an `<h1>`, and make a new
+`<div>` for each actor. The `<div>` should contain the actor's name and a `<ul>`
+with a list of their movies.
 
-> Note: The tests will count how many `<div>`s are nested inside your `Movies`, `Directors`, and `Actors` components. So to get tests to pass, you must create _exactly one_ `<div>` for each movie, director, or actor, and no additional nested `<div>`s in those components.
+> Note: The tests will count how many `<div>`s are nested inside your `Movies`,
+> `Directors`, and `Actors` components. So to get tests to pass, you must create
+> _exactly one_ `<div>` for each movie, director, or actor, and no additional
+> nested `<div>`s in those components.
 
 ## Resources
 
