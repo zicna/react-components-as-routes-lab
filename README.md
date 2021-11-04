@@ -103,5 +103,4 @@ with a list of their movies.
 
 ## Resources
 
-- [React Router](https://github.com/ReactTraining/react-router)
-- [React Router Tutorial](https://reacttraining.com/react-router/web/guides/quick-start)
+- [React Router](https://v5.reactrouter.com/web/guides/quick-start)
